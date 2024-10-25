@@ -316,7 +316,6 @@ class List(AAZCommand):
             intrusion_detection = cls._schema_on_200.value.Element.properties.intrusion_detection
             intrusion_detection.configuration = AAZObjectType()
             intrusion_detection.mode = AAZStrType()
-            intrusion_detection.profile = AAZStrType()
 
             configuration = cls._schema_on_200.value.Element.properties.intrusion_detection.configuration
             configuration.bypass_traffic_settings = AAZListType(
@@ -671,7 +670,6 @@ class List(AAZCommand):
             intrusion_detection = cls._schema_on_200.value.Element.properties.intrusion_detection
             intrusion_detection.configuration = AAZObjectType()
             intrusion_detection.mode = AAZStrType()
-            intrusion_detection.profile = AAZStrType()
 
             configuration = cls._schema_on_200.value.Element.properties.intrusion_detection.configuration
             configuration.bypass_traffic_settings = AAZListType(
